@@ -4,8 +4,17 @@
 }
 
 body {
-    background-color: #FFEDD5;
     font-family: 'Roboto', sans-serif;
+
+    background: url('./coffee.png')no-repeat center;
+    background-size: cover;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: rgba(255, 237, 213, 0.5);
 }
 
 ul {
@@ -13,8 +22,7 @@ ul {
 }
 
 h1, h2, h3, .price {
-    font-family: 'Roboto Serif', serif;
-    text-transform: uppercase;
+    font-family: 'Charm', cursive;
     color: #2D2C2A;
 }
 
@@ -40,16 +48,19 @@ header, section{
 }
 
 header h1 {
+    text-transform: uppercase;
     margin-bottom: 4px;
-    font-size: 28px;
+    font-size: 38px;
     line-height: 33px;
 }
 
-section {
-    margin-bottom: 24px;
+section + section {
+    margin-top: 24px;
 }
 
 section h2 {
+    text-transform: uppercase;
+
     background-color: #FED7AA;
     padding: 8px 16px;
     text-align: center;
@@ -59,8 +70,11 @@ section h2 {
 }
 
 ul li {
-    margin-bottom: 16px;
     display: flex;
+}
+
+ul li + li {
+    margin-top: 16px;
 }
 
 li.details {
@@ -73,9 +87,10 @@ li.details {
     line-height: 19px;
 }
 
-.details P {
+.details p {
     color: rgba(0, 0, 0, 0.6);
     font-size: 14px;
     line-height: 21px;
 }
+
 
